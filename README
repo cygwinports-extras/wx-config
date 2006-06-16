@@ -1,0 +1,45 @@
+wx-config
+------------------------------------------
+Wrapper for wx-config scripts
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  bash
+  wx26-devel
+
+Build requirements:
+  cygwin-1.5.19-4
+  cygport-0.2.0-1
+
+-------------------------------------------
+
+Build instructions:
+  unpack wx-config-1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./wx-config-1-X.cygport all
+
+This will create:
+  /usr/src/wx-config-1-X-src.tar.bz2
+  /usr/src/wx-config-1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/wx-config.sh
+  /etc/preremove/wx-config.sh
+  /usr/lib/wx/config/wx-wrapper.sh
+  /usr/share/doc/Cygwin/wx-config-1.README
+
+------------------
+
+Port Notes:
+
+----- version 1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
