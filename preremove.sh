@@ -1,7 +1,5 @@
 bindir=/usr/bin
-prog=fox-config
-wrapper=/usr/lib/wx/config/ac-wrapper.sh
+prog=wx-config
+wrapper=/usr/lib/wx/config/wx-wrapper.sh
 
-cd ${bindir}
-
-rm -f ${prog}
+rm -f ${bindir}/${prog}

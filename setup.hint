@@ -1,4 +1,4 @@
 category: Devel
-requires: bash wx26-devel
+requires: bash wx28-devel
 sdesc: "Wrapper for wx-config scripts"
 ldesc: "Wrapper for wx-config scripts"
