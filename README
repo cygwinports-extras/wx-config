@@ -4,12 +4,11 @@ Wrapper for wx-config scripts
 
 Runtime requirements:
   bash
-  wx26-devel
-  wx28-devel
+  wx26-devel AND/OR wx28-devel
 
 Build requirements:
-  cygwin-1.5.24-2
-  cygport-0.3.1-1
+  cygwin-1.5.25-15
+  cygport-0.3.11-1
 
 -------------------------------------------
 
@@ -28,14 +27,16 @@ This will create:
 
 Files included in the binary package:
 
-  /etc/postinstall/wx-config.sh
-  /etc/preremove/wx-config.sh
+  /usr/bin/wx-config
   /usr/lib/wx/config/wx-wrapper.sh
   /usr/share/doc/Cygwin/wx-config-2.8.README
 
 ------------------
 
 Port Notes:
+
+----- version 2.8-1 -----
+Updated for Gentoo collision patches (wx-config-X.Y instead of wx-X.Y-config).
 
 ----- version 2.8-1 -----
 Updated for wx-2.8.

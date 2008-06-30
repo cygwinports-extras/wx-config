@@ -18,7 +18,7 @@ fi
 vers="2.8 2.6"
 
 for v in ${vers} ; do
-	eval binary_${v/./_}="wx-${v}-config"
+	eval binary_${v/./_}="wx-config-${v}"
 done
 binary="${binary_2_8}"
 

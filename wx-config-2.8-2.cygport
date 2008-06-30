@@ -1,0 +1,16 @@
+DESCRIPTION="Wrapper for wx-config scripts"
+SRC_URI="wx-wrapper.sh"
+SRC_DIR=.
+
+src_compile() { :; }
+
+src_test() { :; }
+
+src_install() {
+	cd ${S}
+	exeinto /usr/lib/wx/config
+	doexe wx-wrapper.sh
+
+	dodir /usr/bin
+	dosym ../lib/wx/config/wx-wrapper.sh /usr/bin/wx-config
+}
